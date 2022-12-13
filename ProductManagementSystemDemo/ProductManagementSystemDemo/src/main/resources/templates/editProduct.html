@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body>
+<!--<td th:text="${product.productId}" />
+<td th:text="${product.ProductName}"/>
+<td th:text="${product.Price}"/>-->
+<div align="center">
+		<h1>Add Product</h1>
+		<form action="#" th:action="@{/edit}" method="post" th:object="${product}">
+			<label>ProductId:</label>
+			<input type="text" th:field="*{productId}" /><br />
+			<span th:if="${#fields.hasErrors('productId')}" th:errors="*{productId}"></span><br><br>
+
+			<label>Product Name</label>
+			<input type="text" th:field="*{ProductName}" /><br />
+			<span th:if="${#fields.hasErrors('ProductName')}" th:errors="*{ProductName}"></span><br><br>
+
+			<label>Price:</label>
+			<input type="text" th:field="*{Price}" /><br />
+			<span th:if="${#fields.hasErrors('Price')}" th:errors="*{Price}"></span><br><br>
+
+			<button type="submit">Update Product</button>
+		</form>
+</div>
+</body>
+</html>
