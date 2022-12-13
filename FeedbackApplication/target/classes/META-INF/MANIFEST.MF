@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: dhanshreeh
+Build-Jdk: 11.0.15
+Implementation-Title: FeedbackApplication
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.cybage
+Implementation-URL: https://spring.io/projects/spring-boot/FeedbackAppli
+ cation
+Created-By: Maven Integration for Eclipse
+
